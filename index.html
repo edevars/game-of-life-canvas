@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <title>Game of life</title>
+  </head>
+  <body>
+    <main class="grid-wrapper">
+      <section>
+        <h1>gAme of life</h1>
+        <div class="board">
+          <div id="sketch-holder">
+            
+          </div>
+        </div>
+      </section>
+      <aside class="da-rules">
+        <h2>Las reglas</h2>
+        <ul>
+          <li>Este juego no necesita jugadores.</li>
+          <li>
+            Una célula muerta con exactamente 3 células vecinas vivas "nace" (es
+            decir, al turno siguiente estará viva).
+          </li>
+          <li>
+            Una célula viva con 2 o 3 células vecinas vivas sigue viva, en otro
+            caso muere (por "soledad" o "superpoblación").
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
